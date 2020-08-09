@@ -9,15 +9,17 @@ function App() {
 	position: "top",
 	tooltipDisplay: false,
   })
+  //destucting values
   const {position, tooltipDisplay} = values;
+  //updating position of tooltip
   const updatePosition =() =>{
-	
 	setValues({...values, position: document.querySelector('#tooltip').value})
-	
   }
+  //removing tooltip display
   const handleOnMouseOut =() =>{
 	setValues({...values, tooltipDisplay:false})
   }
+  //displaying tooltip
   const handleOnMouseOver =() =>{
 	setValues({...values, tooltipDisplay:true})
   }
@@ -36,6 +38,7 @@ function App() {
 			<option value="left">left</option>
 		</select>
 		<div className="buttonDiv">
+			{/* rendering tooltip only when its state i.e tooltipdisplay is set true */}
 			{tooltipDisplay && <Tooltip position={position} > I am tooltip</Tooltip>}
 			<Button
 			className = "tooltipbtn"

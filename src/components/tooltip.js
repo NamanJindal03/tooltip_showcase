@@ -6,8 +6,9 @@ function Tooltip(props) {
         top: "",
         left: "",
     })
-    const {children, position, } = props;
+    const {children, position } = props;
     const {top, left } = values;
+    //setting position of tooltip according to the prop received
     const setPosition = ()=>{
         if(position === 'top'){
             setValues({...values, top:"46px", left:"47%"  })
@@ -23,6 +24,7 @@ function Tooltip(props) {
         }
         
     }
+    //using useEffect hook and reloading it when position prop changes
     useEffect(()=>{
         setPosition()  
     },[position])

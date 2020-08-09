@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Button(props) {
-  
+  //destructing props
   const {children, onMouseOut, onMouseOver, className} = props
   return (
     <button
