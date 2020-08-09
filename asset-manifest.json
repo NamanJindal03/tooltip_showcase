@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/NamanJindal03/tooltip_showcase/static/css/main.529e6bff.chunk.css",
+    "main.js": "/NamanJindal03/tooltip_showcase/static/js/main.fd19dce7.chunk.js",
+    "main.js.map": "/NamanJindal03/tooltip_showcase/static/js/main.fd19dce7.chunk.js.map",
+    "runtime-main.js": "/NamanJindal03/tooltip_showcase/static/js/runtime-main.b259e098.js",
+    "runtime-main.js.map": "/NamanJindal03/tooltip_showcase/static/js/runtime-main.b259e098.js.map",
+    "static/js/2.9113cbe7.chunk.js": "/NamanJindal03/tooltip_showcase/static/js/2.9113cbe7.chunk.js",
+    "static/js/2.9113cbe7.chunk.js.map": "/NamanJindal03/tooltip_showcase/static/js/2.9113cbe7.chunk.js.map",
+    "index.html": "/NamanJindal03/tooltip_showcase/index.html",
+    "precache-manifest.b4ccdf87900f6ed3feec3928c4020c0c.js": "/NamanJindal03/tooltip_showcase/precache-manifest.b4ccdf87900f6ed3feec3928c4020c0c.js",
+    "service-worker.js": "/NamanJindal03/tooltip_showcase/service-worker.js",
+    "static/css/main.529e6bff.chunk.css.map": "/NamanJindal03/tooltip_showcase/static/css/main.529e6bff.chunk.css.map",
+    "static/js/2.9113cbe7.chunk.js.LICENSE.txt": "/NamanJindal03/tooltip_showcase/static/js/2.9113cbe7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b259e098.js",
+    "static/js/2.9113cbe7.chunk.js",
+    "static/css/main.529e6bff.chunk.css",
+    "static/js/main.fd19dce7.chunk.js"
+  ]
+}
