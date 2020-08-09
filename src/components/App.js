@@ -1,20 +1,25 @@
 import React, {useState} from 'react';
-import Button from './button'
+import Button from './button';
+import Tooltip from './tooltip'
 import './App.css';
 
 function App() {
+	//using use state hook
   const [values, setValues] = useState({
-    position: "top"
+	position: "top",
+	tooltipDisplay: false,
   })
-  const {position} = values;
+  const {position, tooltipDisplay} = values;
   const updatePosition =() =>{
+	
 	setValues({...values, position: document.querySelector('#tooltip').value})
+	
   }
   const handleOnMouseOut =() =>{
-	console.log("on mouse out")
+	setValues({...values, tooltipDisplay:false})
   }
   const handleOnMouseOver =() =>{
-	console.log("on mouse over")
+	setValues({...values, tooltipDisplay:true})
   }
   
   return (
@@ -30,9 +35,10 @@ function App() {
 			<option value="bottom">bottom</option>
 			<option value="left">left</option>
 		</select>
-		<div>
+		<div className="buttonDiv">
+			{tooltipDisplay && <Tooltip position={position} > I am tooltip</Tooltip>}
 			<Button
-			id="btn"
+			className = "tooltipbtn"
 			onMouseOver={handleOnMouseOver}
 			onMouseOut={handleOnMouseOut}
 			>

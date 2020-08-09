@@ -1,18 +1,15 @@
-import React, {useState} from 'react';
-import './App.css';
+import React from 'react';
 
 function Button(props) {
-  const [values, setValues] = useState({
-    position: "top"
-  })
-  const {position} = values;
-  const {children, onMouseOut, onMouseOver} = props
+  
+  const {children, onMouseOut, onMouseOver, className} = props
   return (
     <button
+        className={className}
         onMouseOut={onMouseOut}
         onMouseOver={onMouseOver}
     >
-        {props.children}
+        {children}
 
     </button>
   );

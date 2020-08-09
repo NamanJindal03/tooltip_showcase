@@ -1,3 +1,27 @@
 .App {
   text-align: center;
 }
+.buttonDiv {
+  position: relative;
+
+}
+.tooltipbtn {
+  background-color: #db52f3;
+  position: absolute;
+  left:45%;
+  top:100px;
+  padding: 10px 20px;
+  border-radius: 30px;
+    color: black;
+}
+.tooltip{
+  height: 50px; 
+  width: 63px; 
+  display: block; 
+  position:absolute;
+  background-color: aqua;
+  color: black;
+  left: 45%;
+    z-index: 100;
+    top:100px;
+}
